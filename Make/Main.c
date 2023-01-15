@@ -3,21 +3,25 @@
 #include <time.h>
 #include <string.h>
 
+int resultPer;
+
 struct Item {
-    char name[12]; //normalItem = 10
+    char name[20]; 
     int enhance;
+    int att;
+    int SuccPer;
+};
+
+struct Item DefaultSword = {
+    "DefaultSword",
+    0,
+    3,
+    8
 };
 
 int main(void) {
-    struct Item normalSword = {
-        "NormalSword",
-        0
-    };
 
     srand(time(NULL));
 
-    printf("%s\n", normalSword.name);
-
     
 }
-
